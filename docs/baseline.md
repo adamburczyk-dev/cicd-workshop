@@ -7,26 +7,26 @@ do sekundy.
 
 | Krok | Czas |
 |---|---|
-| Set up job | |
-| Checkout | |
-| Set up Node | |
-| Install dependencies | |
-| Install Playwright browsers | |
-| Unit tests | |
-| API tests | |
-| UI tests | |
-| Upload Playwright report | |
-| Post Set up Node | |
-| Post Checkout | |
-| Complete job | |
-| **Cały przebieg** | |
+| Set up job | 1s |
+| Checkout | 11s |
+| Set up Node | 1s |
+| Install dependencies | 24s |
+| Install Playwright browsers | 13s |
+| Unit tests | 1s |
+| API tests | 19s |
+| UI tests | 2m 17s |
+| Upload Playwright report | 2s |
+| Post Set up Node | 0s |
+| Post Checkout | 0s |
+| Complete job | 0s |
+| **Cały przebieg** | 3m 34s |
 
 ## Czas do pierwszego czerwonego sygnału
 
 | Branch | Czas samego testu | Od startu przebiegu do informacji o błędzie |
 |---|---|---|
-| `demo/failing-unit` | | |
-| `demo/failing-search` | — | |
+| `demo/failing-unit` | 1s | 58s |
+| `demo/failing-search` | — | 4min 42s |
 
 Co na `demo/failing-unit` stało się z testami API i UI:
 
@@ -34,16 +34,16 @@ Co na `demo/failing-unit` stało się z testami API i UI:
 
 | Branch | Wynik przebiegu | Dlaczego tak |
 |---|---|---|
-| `demo/failing-lint` | | |
-| `demo/failing-security` | | |
+| `demo/failing-lint` | PASS | Brak uruchomienia testów linta (npm run lint) lub verify |
+| `demo/failing-security` | PASS | Prawdpodobny brak sprawdzania obecności tokenu |
 
 ## Pięć problemów obecnego pipeline’u
 
-1.
-2.
-3.
-4.
-5.
+1. Brak współbieżności
+2. Zbyt szybka instalacja przeglądarki
+3. Brak testów linta 
+4. Brak testów security
+5. Brak smoke
 
 ## Pomiary z kolejnych zadań
 
