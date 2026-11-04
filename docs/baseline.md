@@ -48,3 +48,9 @@ Co na `demo/failing-unit` stało się z testami API i UI:
 ## Pomiary z kolejnych zadań
 
 Tu dopisujesz pomiary i odpowiedzi z kolejnych zadań, pod nagłówkiem z numerem zadania.
+
+Workery:
+skrócenie 2x
+
+Shard:
+Skrócenie o kolejne 25%
