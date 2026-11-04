@@ -48,3 +48,20 @@ Co na `demo/failing-unit` stało się z testami API i UI:
 ## Pomiary z kolejnych zadań
 
 Tu dopisujesz pomiary i odpowiedzi z kolejnych zadań, pod nagłówkiem z numerem zadania.
+
+## After change
+
+Base:
+1. Install dependencies - 41s
+2. Install Playwright browsers - 11s
+3. All - 4m 2s
+
+After cache:
+1. Install dependencies - 3s
+2. Install Playwright browsers - 0s
+3. All - 2m 2s
+
+
+Zadanie 5, przesyłanie artefaktu:
+1. All - 3m 11s
+2. UI - before 2m 45s, after 2m 41s
